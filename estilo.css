@@ -7,13 +7,13 @@ header{
 }
 .cabecalho{
     display: flex;
-    height: 70px;
-    width: 1100px;
+    height: 85px;
+    width: 1200px;
     background-color: rgb(54, 54, 54);
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 0px;
     align-items: center;
-    border-bottom: 15px solid rgb(0, 112, 180);
+    border-bottom: 4px solid rgb(255, 255, 255);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -23,18 +23,23 @@ h1{
 }
 .botao input{
     display: flex;
-    background-color: rgb(0, 112, 180);
-    width: auto;
+    background-color: rgb(31, 31, 31);
+    width: 220px;
     padding: 13px;
     font-size: 16px;
     font-weight: bolder;
-    height: auto;
+    height: 40px;
     color:rgb(234, 234, 234);
     border-radius: 10px;
+    border-bottom: 2px solid rgb(0, 113, 189);
+    border-right: 2px solid rgb(0, 113, 189);
+    transition: 0.1s linear;
 }
 .botao input:hover{
-    background-color: rgb(31, 31, 31);
+    background-color: rgba(31, 31, 31, 0.774);
     color:rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(0, 113, 189);
+    border-right: 1px solid rgb(0, 113, 189);
 }
 form{
     display: flex;
@@ -42,7 +47,7 @@ form{
 }
 .area-principal{
     display: flex;
-    width: 1104px;
+    width: 1204px;
     justify-content: center;
 }
 .areas{
@@ -56,8 +61,7 @@ form{
     margin-left: 2px;
     margin-right: 2px;
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    
+    border-bottom-right-radius: 5px;  
 }
 
 .areas-titulo{
@@ -68,16 +72,17 @@ form{
     width: auto;
     color:rgb(234, 234, 234);
     font-size: 26px;
-    margin: 5px; 
+    margin: 10px; 
 }
 .status{
+    color:rgb(234, 234, 234);
     display: flex;
     margin-top: 10px;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     height: auto;
-    background-color: rgba(0, 111, 180, 0.795);
-    margin-left: 5px;
+    background-color: rgba(57, 65, 76);
+    margin-left: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
@@ -89,36 +94,42 @@ form{
     width: auto;
 }
 label{
-    margin: 3px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 7px;
     font-size: 17px;
     
 }
 input{
     width: 90%;
-    height: 25px;
+    height: 22px;
     border-radius: 5px;
     border: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 .checkbox{
     display: flex;
-    margin-left: 5px;  
+    margin-left: 15px;  
 }
 .input-checkbox{
    width: 22px;
+   margin-bottom: 60px;
+   margin-top: 10px;
    
 }
 .label-checkbox{
     font-size: 12px; 
+    margin-top: 10px;
+    margin-left: 3px;
+
 }
 .textarea{
-    margin-top:20px
+    margin-top:10px
 }
 .textarea-campo{
-    width: 98%;
+    width: 90%;
     height: 90px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
     font-size: 14px;
     border: none;
     border-radius: 5px;
