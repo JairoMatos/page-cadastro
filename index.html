@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <header>
+        <div class="cabecalho">
+            <img src="logo.png" width="60px"/>
+            <h1>Ordem de Serviço</h1>    
+            <form class="botao">
+                <input type="submit" value="Enviar Ordem de Serviço"/>
+            </form>
+        </div>
+        
+    </header>
+    <form method="post" action="jairo" enctype="multipart/form-data">
+        
+        <section class="area-principal">
+            
+                <fieldset class="areas">
+                    <div class="areas-titulo">Dados do Cliente:</div>
+                    <label>Nome:<br/>
+                        <input type="text" name="marca" placeholder="Nome completo">
+                    </label>
+                    <label>Email:<br/>
+                        <input type="email" name="modelo" placeholder="nome@dominio.com">
+                    </label>
+                    <label>Telefone:
+                        <input type="tel" name="telefone" placeholder="DDD 12345-6789"/>
+                    </label>
+                    <label>Endereço:
+                        <input type="text" name="endereco" placeholder="Rua / Lagradouro "/>
+                    </label>
+                    <label style="font-size: 24px; color: rgba(0, 111, 180, 0.918);">Status do Serviço:</label>
+                    <section class="status" >
+                        <label >Valor do Orçamento:
+                            <input type="text" name="orcamento" placeholder="R$ 0,000"/>
+                        </label>
+                        <label>Tempo de Garantia:
+                        <input type="text" name="orcamento" placeholder="Informe em dias"/>
+                        </label>
+                        <label>Forma de Pagamento:   
+                            <input type="text" name="pagameto" placeholder="Dinheiro / Cartão"/>
+                            </label>
+                        <label>Data:<br/>
+                            <input class="data" type="date" name="data"/>
+                        </label>
+                    </section>
+
+                </fieldset>
+
+                <fieldset class="areas">
+                    <div class="areas-titulo">Dados do Aparelho:</div>
+                    <label>Marca:<br/>
+                        <input type="text" name="marca" placeholder="Apple / Samsung / Montorola">
+                    </label>
+                    <label>Modelo<br/>
+                        <input type="text" name="modelo" placeholder="Iphone / Galaxy Note...">
+                    </label>
+
+                    
+                    <label>Condições do Aparelho:</label>
+                        <div class="checkbox">
+                            <input class="input-checkbox"type="checkbox" id="display"/>
+                            <label class="label-checkbox" for="display">Display Danificado</label>
+                            <input class="input-checkbox"type="checkbox" id="status-case"/>
+                            <label class="label-checkbox" for="status-case">Home Danificado</label>
+                            <input class="input-checkbox"type="checkbox" id="auto-falante"/>
+                            <label class="label-checkbox" for="auto-falante">Auto-falantes Danificado</label>
+                            <input class="input-checkbox"type="checkbox" id="botoes"/>
+                            <label class="label-checkbox" for="botoes">Botões Danificados</label>
+                            <input class="input-checkbox"type="checkbox" id="bateria"/>
+                            <label class="label-checkbox" for="bateria">Bateria Danificada</label>
+                        </div>    
+                        <div class="textarea">
+                            <label>Observações Gerais:</label><br/>
+                            <textarea class="textarea-campo" placeholder="Informações sobre o aparelho"></textarea>
+                        </div>
+                        <div class="textarea">
+                            <label>Detales do Serviço:</label><br/>
+                            <textarea class="textarea-campo" placeholder="datalharo os serviços que serao executados"></textarea>
+                        </div>
+                
+                </fieldset>
+            
+        </section>
+    </form>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
