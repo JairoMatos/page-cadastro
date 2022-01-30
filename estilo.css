@@ -3,7 +3,7 @@
 header{
     display: flex;
     justify-content: center; 
-     
+    margin-top: 5px;
 }
 .cabecalho{
     display: flex;
@@ -60,9 +60,11 @@ form{
     border: none;
     margin-left: 2px;
     margin-right: 2px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;  
+    
+    
 }
+.areas:first-child{border-bottom-left-radius: 5px;}
+.areas:last-child{border-bottom-right-radius: 5px;}
 
 .areas-titulo{
     display: flex;
